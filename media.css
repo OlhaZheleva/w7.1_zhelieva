@@ -1,0 +1,161 @@
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+        .nav__item_right {
+            float: right;
+        }
+        .header__logo {
+        width: 30%;
+        }
+        .header_nav { 
+            width: 70%;
+        }
+        
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header__logo p {
+            display: none;
+        }
+    .header__container { 
+        justify-content: space-between;
+    }
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 770px) and (max-width: 991px) {
+    .header__logo p {
+            display: none;
+        }
+    .header__container { 
+        justify-content: space-between;
+    }
+    .nav__link { 
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) {
+    .intro__container {
+            display: flex;
+    }
+        .intro__image { 
+            overflow: hidden;
+        }
+        .intro__image img { 
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 734px;
+            max-width: 721px;
+        }
+        .mission__content {
+                width: 50%;
+                padding: 150px 0 235px 50px;
+            }
+            .mission__content {
+            padding: 150px 0 235px 50px;
+        }
+
+    .mission__container {
+        display: flex;
+    }
+    .mission__back {
+        background-color: #FF8201;
+        width: 50%;
+        overflow: hidden;
+        padding: -2px;
+    }
+
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 769px) {
+    .header__logo p {
+            display: none;
+        }
+    
+      
+        .intro__container {
+            flex-direction: column-reverse;
+        }
+            .intro__image { 
+            width: 100%;
+            margin: 0;
+        }
+
+    .header_nav { 
+        position: fixed;
+        top: 100px;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #fff;
+        z-index: 10;
+
+        display: flex;
+        flex-direction: column;
+    }
+    /*--- стилі нижче необхідно закоментувати, щоб увімкнути мобільне меню */ 
+
+    .header_nav {
+        display: none;
+    }
+    /*--- стилі вище необхідно закоментувати, щоб увімкнути мобільне меню */
+    
+    .nav__item { 
+        margin: 0 0 10px 25px;
+    }
+
+    .header__container { 
+        justify-content: space-between;
+    }
+    
+    .header__button { 
+        width: 30px;
+        height: 30px;
+        position: relative;
+        float: right;
+    }
+
+    .header__button span{ 
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+
+    .header__button span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+    .header__button span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+        
+
+        .header { 
+            padding: 25px;
+        }
+
+        .theme-name { 
+            margin-bottom: 1rem;
+        }
+        .title { 
+            margin-bottom: 1rem;
+        }
+        .about { 
+            margin-bottom: 3rem;
+        }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {}

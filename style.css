@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body { 
+    font-family: "Raleway";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+[class*="_container"] {
+    margin: 0px auto;
+    max-width: 1440px;
+}
+
+:root { 
+    --color-blue: #0536FC;
+    --color-orange: #FF8201;
+}
+/*-----header-----*/
+.header {
+    padding: 24px 50px;
+}
+
+.header__container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.header__logo {
+    display: inline-flex;
+}
+
+.header__logo p { 
+    font-weight: 300;
+    letter-spacing: -0.03em;
+
+    opacity: 0.35;
+    margin: -5px 0 0 10px;
+}
+
+.header_nav {
+    display: inline-block;
+}
+
+.nav__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav__link {
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    opacity: 0.85; 
+    font-weight: 400;   
+}
+
+.nav__item:not(:last-child) { 
+    margin-right: 2.77vw;
+}
+
+.nav__link:hover {
+    color: #0536FC;
+}
+
+.nav__item::after { 
+    content: "";
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 0px 0 2.5px 10px;
+}
+
+.nav__item_right .nav__link { 
+    color:#0536FC ;
+}
+/*----------intro ---------*/
+
+.page {}
+
+.intro {}
+
+.intro__container {
+    display: flex;
+    position: relative;
+    margin-bottom: 10.42vw;
+   
+}
+
+.intro__content {
+    padding: 8.82vw 0 0 8.4vw;
+}
+
+.intro__theme-name {}
+
+.theme-name {
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #0536FC;
+    opacity: 0.9;
+
+    margin-bottom: 1.875em;
+}
+
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 42px;
+    /* or 104% */
+
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1.228em;
+    max-width: 430px;
+}
+
+.intro__title {
+    font-size: 57px;
+    line-height: 59px;
+    max-width: 500px;
+}
+
+.intro__about, 
+.about{
+    letter-spacing: -0.03em;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.intro__btn {}
+
+.btn {
+    background-color: #fff;
+    padding: 18px 35px ;
+    border: none;
+    color: #0536FC;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:active { 
+    background-color: #0536FC;
+    color: #fff;
+    transition: all 0.5s ease-out;
+    border: none;
+}
+
+.buttons__container { 
+    display: flex;
+    width: 100%;
+}
+.buttons__btn { 
+    width: 50%;
+}
+.intro__image {
+    position: relative;
+    width: 50%;
+    margin-top: -35px;
+}
+
+.intro__scroll {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
